@@ -1,14 +1,14 @@
 //
-//  Authentication.swift
+//  LoginViewController.swift
 //  MUWeekly
 //
-//  Created by Nikita Prakhov on 10.10.14.
+//  Created by Nikita Prakhov on 15.10.14.
 //  Copyright (c) 2014 Nikita Prakhov. All rights reserved.
 //
 
 import UIKit
 
-class Authentication: UIViewController {
+class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,5 +31,9 @@ class Authentication: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func loginAction(sender: UIButton) {
+        
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 
 }

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24379BE419EED84300E82A40 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24379BE319EED84300E82A40 /* LoginViewController.swift */; };
 		24825D2919E8592000C1D306 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24825D2819E8592000C1D306 /* Authentication.storyboard */; };
-		24825D2B19E85ED800C1D306 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24825D2A19E85ED800C1D306 /* Authentication.swift */; };
 		248D559F19E6FC200057355A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248D559E19E6FC200057355A /* AppDelegate.swift */; };
 		248D55A119E6FC200057355A /* LecturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248D55A019E6FC200057355A /* LecturesViewController.swift */; };
 		248D55A419E6FC200057355A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 248D55A219E6FC200057355A /* Main.storyboard */; };
@@ -28,8 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24379BE319EED84300E82A40 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controller/LoginViewController.swift; sourceTree = "<group>"; };
 		24825D2819E8592000C1D306 /* Authentication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
-		24825D2A19E85ED800C1D306 /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		248D559919E6FC1F0057355A /* MUWeekly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MUWeekly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		248D559D19E6FC200057355A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		248D559E19E6FC200057355A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +60,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24379BE019EED72400E82A40 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		24379BE119EED73900E82A40 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				248D55A019E6FC200057355A /* LecturesViewController.swift */,
+				24379BE319EED84300E82A40 /* LoginViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		24379BE219EED75E00E82A40 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				248D55A219E6FC200057355A /* Main.storyboard */,
+				24825D2819E8592000C1D306 /* Authentication.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 		248D559019E6FC1F0057355A = {
 			isa = PBXGroup;
 			children = (
@@ -81,14 +106,13 @@
 		248D559B19E6FC1F0057355A /* MUWeekly */ = {
 			isa = PBXGroup;
 			children = (
+				24379BE219EED75E00E82A40 /* UI */,
+				24379BE119EED73900E82A40 /* Controller */,
+				24379BE019EED72400E82A40 /* Model */,
 				248D559E19E6FC200057355A /* AppDelegate.swift */,
-				248D55A019E6FC200057355A /* LecturesViewController.swift */,
-				248D55A219E6FC200057355A /* Main.storyboard */,
 				248D55A519E6FC200057355A /* Images.xcassets */,
 				248D55A719E6FC200057355A /* LaunchScreen.xib */,
 				248D559C19E6FC200057355A /* Supporting Files */,
-				24825D2819E8592000C1D306 /* Authentication.storyboard */,
-				24825D2A19E85ED800C1D306 /* Authentication.swift */,
 			);
 			path = MUWeekly;
 			sourceTree = "<group>";
@@ -219,9 +243,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24379BE419EED84300E82A40 /* LoginViewController.swift in Sources */,
 				248D55A119E6FC200057355A /* LecturesViewController.swift in Sources */,
 				248D559F19E6FC200057355A /* AppDelegate.swift in Sources */,
-				24825D2B19E85ED800C1D306 /* Authentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
